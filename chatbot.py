@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_KEY = "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"  # <-- replace with your real key
+API_KEY =st.secrets["OP_API_KEY"]  # <-- replace with your real key
 model = "openai/gpt-3.5-turbo"
 
 st.title("🧠 Gen-AI Chatbot (OpenRouter)")
